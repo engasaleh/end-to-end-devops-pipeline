@@ -69,4 +69,6 @@ jobs:
 
           git commit -m "chore: update image tag ${{ github.run_number }} [skip ci]" || exit 0
 
+          git pull origin main --rebase
+
           git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:main
