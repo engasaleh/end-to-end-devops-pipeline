@@ -7,6 +7,6 @@ public class HelloController {
 
     @GetMapping("/")
     public String hello() {
-        return "Hello Abdallah, Welcome to DevOps♾️ End-to-End Project 🚀";
+        return "Hello🧑🏻‍💻, Welcome to DevOps♾️ End-to-End Project with fully GitOps Atomated🚀";
     }
 }
