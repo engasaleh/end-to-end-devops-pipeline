@@ -50,7 +50,7 @@ jobs:
         run: |
           echo "Cloning GitOps repo..."
 
-          git clone https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/YOUR_USERNAME/end-to-end-devops-gitops.git
+          git clone https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/engasaleh/end-to-end-devops-gitops.git
 
           cd end-to-end-devops-gitops
 
@@ -59,8 +59,8 @@ jobs:
 
           sed -i "s|image:.*devops-app.*|image: $IMAGE|g" k8s/deployment.yaml
 
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          git config user.name "engasaleh"
+          git config user.email "abdalahsaleh99@gmail.com"
 
           git add .
           git commit -m "Update image to ${{ github.run_number }}" || exit 0
