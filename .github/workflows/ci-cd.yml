@@ -50,7 +50,7 @@ jobs:
         run: |
           echo "Cloning GitOps repo..."
 
-          git clone https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/engasaleh/end-to-end-devops-gitops.git
+          git clone https://x-access-token:${{ secrets.GITOPS_TOKEN }}@github.com/engasaleh/end-to-end-devops-gitops.git
 
           cd end-to-end-devops-gitops
 
