@@ -6,7 +6,8 @@ on:
       - "main"
 
 jobs:
-  build:
+  CI-CD-Pipeline:
+    name: Build, Test, and Deploy to GitOps
     runs-on: ubuntu-latest
 
     steps:
